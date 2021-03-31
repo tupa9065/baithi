@@ -54,8 +54,8 @@
         return check;
 
     }
-     let x =isFibonacci(13);
-     alert(x)
+     // let x =isFibonacci(13);
+     // alert(x)
     //-----------------------------------Bai 4
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -75,7 +75,7 @@
             ctx.arc(this.x,this.y,this.radius,0,2*Math.PI);
             ctx.fillStyle=this.color;
             ctx.fill();
-            ctx.stroke();
+            ctx.closePath();
         }
     }
     let circle = new Circle(10,10,100,"#000000")
